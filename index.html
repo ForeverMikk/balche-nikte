@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balché Nikté - Cuidado Para tu Piel</title>
+    <!-- Icon -->
+    <link rel="shortcut icon" href="./assets/image/icono.png" type="image/x-icon">
+
+     <!-- Style Sheets -->
+     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Tailwind CDN -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700;800&family=Courgette&family=Kufam:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <!------------ Header & Navigation Bar ------------>
+    <header>
+        <a href="#" class="logo"><img src="./assets/image/logo-01.png" alt=""></a>
+        <div class="toggle">
+            <ul class="relative flex">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#values">Valores</a></li>
+                <li><a href="#testimonial">Testimonios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!------------ HOME ------------>
+    <section class="home relative h-screen flex justify-between items-center text-white" id="home">
+        <div class="textBx">
+            <h2 class="text-5xl font-bold tracking-wider">Fitocosmética Funcional <br> al cuidado de tu piel</h2>
+            <p class="my-10 tracking-wide text-xl">Descubre en los productos de <span class="text-2xl font-semibold"> Balché Nikté ®</span>. 
+                <br> Los ingredientes y sus beneficios, que le van bien a tu piel. 
+                <br> No basta que sea natural … debe ser funcional!
+            </p>
+            <a href="#products" class="btn relative pt-3 px-4 inline-block uppercase tracking-widest text-xl">Productos</a>
+        </div>
+    </section>
+
+    <!------------ PRODUCTS ------------>
+    <section class="products" id="products">
+        <div class="heading w-full text-center">
+            <h2 class="font-bold text-2xl">Productos</h2>
+        </div>
+        
+        <div class="content">
+            <div class="productBx">
+                <img src="./assets/image/products/jess-harper-sunday-pFNj9p_m534-unsplash.jpg" alt="">
+            </div>
+            <div class="productBx">
+                <img src="assets/image/products/pexels-karolina-grabowska-4041391.jpg" alt="">
+            </div>
+            <div class="productBx">
+                <img src="./assets/image/products/pexels-karolina-grabowska-4202938.jpg" alt="">
+            </div>
+            <div class="productBx">
+                <img src="./assets/image/products/pexels-karolina-grabowska-4465121.jpg" alt="">
+            </div>
+            <div class="productBx">
+                <img src="./assets/image/products/pexels-reneereneee-4055794.jpg" alt="">
+            </div>
+        </div>
+        <div class="heading text-center flex justify-center mt-5">
+            <a href="#" class="btn pt-3 px-4 inline-block uppercase tracking-widest text-xl">Mas Productos</a>
+        </div>
+    </section>
+
+    <!----------- ABOUT ------------>
+    <section class="about md:h-screen flex md:justify-end justify-center items-center" id="about">
+        <div class="inner-container p-10">
+            <h2 class="titleChange text-4xl py-10 md:py-5 sm:py-2">Sobre Nosotros</h2>
+            <p>
+                Somos una <span class="font-bold text-lg mb-10">Empresa Méxicana</span>
+                conformada por un grupo de químicos conscientes de la abundancia de la Madre Tierra 
+                con conocimientos en tecnologías de permeación de la piel. 
+                <br><br> ¡La PIEL es un órgano importantísimo!!, que además de cumplir la función de barrera y protección; 
+                proyecta tus emociones, personalidad y energía.
+            </p>
+            <div class="skills flex justify-between py-5 text-sm">
+                 <button class="btn">Sobre Nosotros</button>
+                 <button class="btn">Balché Nikté</button>
+                 <button class="btn">Valores</button>
+            </div>
+        </div>
+     </section>
+
+    <!------------ VALUES  ------------>
+    <section class="values" id="values">
+        <div class="heading w-full text-center">
+            <h2 class="font-bold text-3xl tracking-wider">Valores</h2>
+            <p>¿Por qué elegirnos?</p>
+        </div>
+        <div class="content">
+            <div class="valuesBx">
+                <img src="./assets/image/icons/biology.png">
+                <h2 class="text-2xl font-bold tracking-wider">Desarrollo Cientifico</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim perferendis ad est possimus reprehenderit .</p>
+            </div>
+            <div class="valuesBx">
+                <img src="./assets/image/icons/eco.png">
+                <h2 class="text-2xl font-bold tracking-wider">Ecofriendly</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim perferendis ad est possimus reprehenderit .</p>
+            </div>
+            <div class="valuesBx">
+                <img src="./assets/image/icons/pet.png">
+                <h2 class="text-2xl font-bold tracking-wider">Sin Crueldad</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim perferendis ad est possimus reprehenderit .</p>
+            </div>
+        </div>
+    </section>
+
+    <!------------ TESTIMONIALS  ------------>
+    <section class="testimonial" id="testimonial">
+        <div class="heading w-full text-center">
+            <h2 class="font-bold text-2xl">Testimonios</h2>
+        </div>
+
+        <div class="content">
+            <div class="testimonialBx">
+                <p class="text-xl tracking-wide">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt perspiciatis culpa delectus obcaecati dolores numquam sint praesentium doloribus ad nobis veniam pariatur, temporibus officiis rem minima iusto quia eum?</p>
+                <h3 class="text-xl font-semibold tracking-wide">Someone Famous <br><span class="text-lg"><i class="fab fa-instagram"></i> @someone</span></h3>
+            </div>
+            <div class="testimonialBx">
+                <p class="text-xl tracking-wide">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt perspiciatis culpa delectus obcaecati dolores numquam sint praesentium doloribus ad nobis veniam pariatur, temporibus officiis rem minima iusto quia eum?</p>
+                <h3 class="text-xl font-semibold tracking-wide">Someone Famous <br><span class="text-lg"><i class="fab fa-instagram"></i> @someone</span></h3>
+            </div>
+        </div>
+
+    </section>
+
+    <!------------ CONTACT ------------>
+    <section class="contact" id="contact">
+        <div class="heading w-full text-center">
+            <h2 class="font-bold text-2xl">Contacto</h2>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3 class="font-bold">Información de Contacto</h3>
+                <div class="contactInfoBx">
+
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="text">
+                            <h3 class="font-bold">Dirección</h3>
+                            <p>Cairo 321 <br> Fernando Casas Alemán CP 07960 <br> Gustavo A. Madero</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone"></i></div>
+                        <div class="text">
+                            <h3 class="font-bold">Telefono</h3>
+                            <p>56 11 46 30 60</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-envelope"></i></div>
+                        <div class="text">
+                            <h3 class="font-bold">Correo Electronico</h3>
+                            <p>contacto@balchenikte.com</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="formBx">
+                <form>
+                    <h3>Envianos un Mensaje</h3>
+                    <input type="text" name="" placeholder="Nombre Completo">
+                    <input type="email" name="" placeholder="Correo Electronico">
+                    <textarea placeholder="Escribe tu Mensaje"></textarea>
+                    <input type="submit" value="Enviar" class="tracking-widest">
+                </form>
+            </div>
+        </div>
+    </section>
+  
+    
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            let header = document.querySelector('header');
+            header.classList.toggle('gummed', window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>

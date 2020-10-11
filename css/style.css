@@ -1,0 +1,358 @@
+@font-face {
+  font-family: "Kaili";
+  src: url("./../assets/fonts/Kaili.ttf");
+}
+@font-face {
+  font-family: "Kaili Light";
+  src: url("./../assets/fonts/Kaili_light.ttf");
+}
+
+:root {
+  --primary: rgb(45, 22, 52);
+  --secondary: rgb(62, 32, 73);
+  --third: rgb(158, 118, 177);
+  --fourth: #fff;
+  font-family: 'Baloo Tammudu 2', cursive;
+  font-family: 'Courgette', cursive;
+  font-family: 'Kufam', cursive;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* For All Sections*/
+section {
+  padding: 130px;
+}
+
+/*--------------- HEADER ---------------*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /*to center the logo*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 40px 100px;
+  z-index: 1000;
+  transition: 0.5s;
+}
+header.gummed {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 100px;
+  background: var(--secondary);
+  background-blend-mode: overlay;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+header .logo {
+  padding-bottom: 30px;
+  max-width: 170px;
+}
+header.gummed .logo {
+  max-width: 150px;
+  padding-bottom: 0;
+}
+header ul li {
+  position: relative;
+}
+
+header ul li a {
+  color: #fff;
+  font-size: 17px;
+  font-family: 'Baloo Tammudu 2', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-bolck;
+  margin: 0 15px;
+}
+
+header.gummed ul li a {
+  color: #fff;
+}
+
+/*--------------- HOME ---------------*/
+.home {
+    background: radial-gradient(#ca7eeeb3, rgba(62, 35, 73, 1)), url(./../assets/image/fondo.png);
+    background-size: cover;
+    background-position: right;
+    padding-left: 130px;
+}
+
+.home h2 {
+    margin-top: 130px;
+    font-family: "Kaili";
+    color: var(--primary);
+}
+.home p {
+  font-family: 'Baloo Tammudu 2', sans-serif;
+}
+.home p span {
+  color: var(--primary);
+}
+.home .btn {
+  font-family: 'Baloo Tammudu 2', sans-serif;
+  color: var(--secondary);
+  background: #fff;
+}
+
+/*--------------- PRODUCTS ---------------*/
+.products .heading h2{
+  color: var(--primary);
+}
+
+.products .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.products .productBx {
+  width: 25%;
+  padding: 20px;
+}
+
+.products .productBx img {
+  max-width: 100%;
+}
+
+.products .btn {
+  font-family: 'Baloo Tammudu 2', sans-serif;
+  background: var(--secondary);
+  color: #fff;
+}
+
+/*--------------- ABOUT US ---------------*/
+.about {
+  font-family: 'Baloo Tammudu 2', sans-serif;
+  background: url("./../assets/image/about-us.jpg") no-repeat left;
+  background-size: 55%;
+  background-color: var(--third);
+  overflow: hidden;
+  padding: 100px 0;
+}
+.about h2 {
+  
+}
+.about .inner-container {
+  width: 55%;
+  float: right;
+  background-color: var(--primary);
+  color: #fff;
+}
+.about .textChange::before {
+  opacity: 0;
+  transition: 1s;
+}
+.about .titleChange {
+  color: var(--third);
+}
+.about .textChange {
+  color: #fff;
+  opacity: 1;
+  transition: 1s;
+}
+.about .inner-container .skills {
+  color: #fff;
+}
+
+/*--------------- VALUES ---------------*/
+.values {
+  background: var(--secondary);
+}
+.values .heading h2 {
+  color: var(--third);
+}
+.values .heading p {
+  color: #fff;
+}
+.values .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+.values .content .valuesBx {
+  padding: 40px 20px;
+  background: #222;
+  color: #fff;
+  max-width: 340px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.values .content .valuesBx:hover {
+  background: var(--third);
+}
+.values .content .valuesBx img {
+  max-width: 80px;
+  filter: invert(1);
+  margin-bottom: 20px;
+}
+.values .content .valuesBx h2 {
+  font-family: 'Baloo Tammudu 2', sans-serif;
+}
+.values .content .valuesBx p {
+  font-family: 'Baloo Tammudu 2', sans-serif;
+}
+
+/*--------------- TESTIMONIALS ---------------*/
+
+.testimonial .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.testimonial .content .testimonialBx{
+  max-width: calc(50% - 40px);
+  padding: 60px 40px;
+  margin: 20px;
+  background: var(--third);
+  color: #fff;
+}
+
+.testimonial .content .testimonialBx p{
+  font-family: 'Baloo Tammudu 2', sans-serif;
+}
+.testimonial .content .testimonialBx h3 {
+  margin-top: 40px;
+  text-align: end;
+  color: var(--primary);
+}
+.testimonial .content .testimonialBx span {
+  color: var(--secondary);
+}
+
+/*--------------- CONTACT ---------------*/
+
+.contact {
+  background: var(--primary);
+}
+
+.contact .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.formBx {
+  min-width: 60%;
+}
+
+.formBx form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactInfo h3, .formBx form h3{
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.contactInfo {
+  min-width: 40%;
+}
+
+.contactInfoBx {
+  position: relative;
+}
+
+.contactInfoBx .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.contactInfoBx .box .icon {
+  min-width: 40px;
+  padding-top: 4px;
+  color: var(--third);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactInfoBx .box .text {
+  display: flex;
+  margin-left: 20px;
+  flex-direction: column;
+  color: var(--third);
+}
+
+
+.formBx form input,
+.formBx form textarea{
+  margin-bottom: 20px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background: var(--secondary);
+  color: #fff;
+  resize: none;
+}
+.formBx form input::placeholder,
+.formBx form textarea::placeholder {
+  color: var(--third);
+  font-weight: 500;
+}
+.formBx form textarea {
+  min-height: 200px;
+}
+.formBx form input[type="submit"] {
+  max-width: 100px;
+  background: var(--third);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/*|=|=|=|=|=|=|=|=|=|=|=|= Responsive Media Querys =|=|=|=|=|=|=|=|=|=|=|=|*/
+/* For PC with Biger Screens */
+@media (max-width: 1280px) {
+
+}
+
+/* For PC with Big Screen*/
+@media (max-width: 1024px) {
+  /* Home */
+
+}
+
+/* For Tablets or Medium Screen*/
+@media (max-width: 768px) {
+  /* Abous Us Section */
+  .about {
+    background-size: 100%;
+  }
+  .about .inner-container {
+    width: 70%;
+  }
+}
+
+/* For Mobile or Small Screen*/
+@media (max-width: 640px) {
+  .about {
+    background-size: cover;
+  }
+  .about .inner-container {
+    width: 80%;
+  }
+  .about .inner-container .skills {
+    display: flex;
+    flex-direction: row;
+  }
+}
