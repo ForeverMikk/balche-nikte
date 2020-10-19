@@ -24,27 +24,26 @@
     <!------------ Header & Navigation Bar ------------>
     <header>
         <a href="#" class="logo"><img src="./assets/image/logo-01.png" alt=""></a>
-        <div class="toggle">
-            <ul class="relative flex">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#products">Productos</a></li>
-                <li><a href="#about">Sobre Nosotros</a></li>
-                <li><a href="#values">Valores</a></li>
-                <li><a href="#testimonial">Testimonios</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </div>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <ul class="menu lg:relative lg:flex">
+            <li><a href="#home" onclick="toggleMenu()">Inicio</a></li>
+            <li><a href="#products" onclick="toggleMenu()">Productos</a></li>
+            <li><a href="#about" onclick="toggleMenu()">Sobre Nosotros</a></li>
+            <li><a href="#values" onclick="toggleMenu()">Valores</a></li>
+            <li><a href="#testimonial" onclick="toggleMenu()">Testimonios</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+        </ul>
     </header>
 
     <!------------ HOME ------------>
     <section class="home relative h-screen flex justify-between items-center text-white" id="home">
         <div class="textBx">
-            <h2 class="text-5xl font-bold tracking-wider">Fitocosmética Funcional <br> al cuidado de tu piel</h2>
-            <p class="my-10 tracking-wide text-xl">Descubre en los productos de <span class="text-2xl font-semibold"> Balché Nikté ®</span>. 
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-wider">Fitocosmética Funcional <br> al cuidado de tu piel</h2>
+            <p class="my-10 tracking-wide text-lg lg:text-xl">Descubre en los productos de <span class="text-2xl font-semibold"> Balché Nikté ®</span>. 
                 <br> Los ingredientes y sus beneficios, que le van bien a tu piel. 
                 <br> No basta que sea natural … debe ser funcional!
             </p>
-            <a href="#products" class="btn relative pt-3 px-4 inline-block uppercase tracking-widest text-xl">Productos</a>
+            <a href="#products" class="btn relative pt-3 px-4 inline-block uppercase tracking-widest text-lg lg:text-xl">Productos</a>
         </div>
     </section>
 
@@ -79,19 +78,19 @@
     <!----------- ABOUT ------------>
     <section class="about md:h-screen flex md:justify-end justify-center items-center" id="about">
         <div class="inner-container p-10">
-            <h2 class="titleChange text-4xl py-10 md:py-5 sm:py-2">Sobre Nosotros</h2>
-            <p>
-                Somos una <span class="font-bold text-lg mb-10">Empresa Méxicana</span>
+            <h2 class="titleChange text-3xl md:text-4xl py-10 md:py-5 sm:py-2">Sobre Nosotros</h2>
+            <p class="text-lg">
+                Somos una <span class="font-bold text-xl mb-10">Empresa Méxicana</span>
                 conformada por un grupo de químicos conscientes de la abundancia de la Madre Tierra 
                 con conocimientos en tecnologías de permeación de la piel. 
                 <br><br> ¡La PIEL es un órgano importantísimo!!, que además de cumplir la función de barrera y protección; 
                 proyecta tus emociones, personalidad y energía.
             </p>
-            <div class="skills flex justify-between py-5 text-sm">
+            <!-- <div class="skills flex justify-between py-5 text-sm">
                  <button class="btn">Sobre Nosotros</button>
                  <button class="btn">Balché Nikté</button>
                  <button class="btn">Valores</button>
-            </div>
+            </div> -->
         </div>
      </section>
 
@@ -128,19 +127,19 @@
 
         <div class="content">
             <div class="testimonialBx">
-                <p class="text-xl tracking-wide">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt perspiciatis culpa delectus obcaecati dolores numquam sint praesentium doloribus ad nobis veniam pariatur, temporibus officiis rem minima iusto quia eum?</p>
-                <h3 class="text-xl font-semibold tracking-wide">Someone Famous <br><span class="text-lg"><i class="fab fa-instagram"></i> @someone</span></h3>
+                <p class="text-md md:text-xl tracking-wide">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt perspiciatis culpa delectus obcaecati dolores numquam sint praesentium doloribus ad nobis veniam pariatur, temporibus officiis rem minima iusto quia eum?</p>
+                <h3 class="text-lg md:text-xl font-semibold tracking-wide">Someone Famous <br><span class="text-md md:text-lg"><i class="fab fa-instagram"></i> @someone</span></h3>
             </div>
             <div class="testimonialBx">
-                <p class="text-xl tracking-wide">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt perspiciatis culpa delectus obcaecati dolores numquam sint praesentium doloribus ad nobis veniam pariatur, temporibus officiis rem minima iusto quia eum?</p>
-                <h3 class="text-xl font-semibold tracking-wide">Someone Famous <br><span class="text-lg"><i class="fab fa-instagram"></i> @someone</span></h3>
+                <p class="text-md md:text-xl tracking-wide">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt perspiciatis culpa delectus obcaecati dolores numquam sint praesentium doloribus ad nobis veniam pariatur, temporibus officiis rem minima iusto quia eum?</p>
+                <h3 class="text-lg md:text-xl font-semibold tracking-wide">Someone Famous <br><span class="text-md md:text-lg"><i class="fab fa-instagram"></i> @someone</span></h3>
             </div>
         </div>
 
     </section>
 
     <!------------ CONTACT ------------>
-    <section class="contact" id="contact">
+    <section class="contact text-white" id="contact">
         <div class="heading w-full text-center">
             <h2 class="font-bold text-2xl">Contacto</h2>
         </div>
@@ -186,14 +185,28 @@
             </div>
         </div>
     </section>
-  
-    
+    <footer>
+
+    </footer>
 
     <script type="text/javascript">
+        /* Scrolling Effect of the Menu */
         window.addEventListener('scroll', function(){
             let header = document.querySelector('header');
+            let menu = document.querySelector('.toggle');
+
             header.classList.toggle('gummed', window.scrollY > 0);
+            menu.classList.toggle('gummed', window.scrollY > 0)
         });
+
+        /* Toggle Menu */
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        } 
     </script>
 </body>
 </html>
